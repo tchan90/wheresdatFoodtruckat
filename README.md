@@ -23,11 +23,18 @@ User can add, edit and delete foodtrucks here. All Foodtrucks added are displaye
 ## Installation
 ```javascript
 cd client
+npm install
 npm run serve
 ```
 ```javascript
 cd server
+npm install
 node src/app.js
+```
+Alternatively download the production build here: https://github.com/tchan90/wheresdatfoodtruckat-prod and run
+```javascript
+npm install
+npm start
 ```
 
 ## Tech Stack
