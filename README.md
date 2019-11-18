@@ -25,6 +25,8 @@ Enter the following credentials in the login page to test the functions:
 
 `password: password123`
 
+Otherwise registering can also access this page.
+
 ## Installation
 ```javascript
 cd client
