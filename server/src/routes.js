@@ -12,7 +12,7 @@ module.exports = (app) => {
     //Directory
     //app.get('/directory', DirectoryController.getAllFoodTrucks)
     //AddTruck
-    app.post('/addTruck', auth, DirectoryController.postFoodTruck)
+    app.post('/addTruck', DirectoryController.postFoodTruck)
     //Get FoodTruck by ID
     app.get('/foodTruck/:foodTruckId', DirectoryController.getFoodTruckById)
     //Update Foodtruck by ID
