@@ -10,14 +10,14 @@
     <b-row>
          <!--opening-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedM" v-model="foodTruckInfo.MondayOpen" id="MondayOpen"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.MondayOpen" id="MondayOpen"></b-form-input>
   </b-col>
     <b-col md="4" class="text-center">
       to
       </b-col>
          <!--closing-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedM" v-model="foodTruckInfo.MondayClose" id="MondayClose"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.MondayClose" id="MondayClose"></b-form-input>
   </b-col>
     </b-row>
     </div>
@@ -27,14 +27,14 @@
     <b-row>
          <!--opening-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedT" v-model="foodTruckInfo.TuesdayOpen"  id="TuesdayOpen"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.TuesdayOpen"  id="TuesdayOpen"></b-form-input>
   </b-col>
     <b-col md="4" class="text-center">
       to
       </b-col>
          <!--closing-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedT" v-model="foodTruckInfo.TuesdayClose"  id="TuesdayClose" ></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.TuesdayClose"  id="TuesdayClose" ></b-form-input>
   </b-col>
     </b-row>
      </div>
@@ -44,14 +44,14 @@
     <b-row>
          <!--opening-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedW" v-model="foodTruckInfo.WednesdayOpen"  id="WednesdayOpen"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.WednesdayOpen"  id="WednesdayOpen"></b-form-input>
   </b-col>
     <b-col md="4" class="text-center">
       to
       </b-col>
          <!--closing-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedW" v-model="foodTruckInfo.WednesdayClose"  id="WednesdayClose" ></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.WednesdayClose"  id="WednesdayClose" ></b-form-input>
   </b-col>
     </b-row>
     </div>
@@ -61,14 +61,14 @@
     <b-row>
          <!--opening-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedTh" v-model="foodTruckInfo.ThursdayOpen"  id="ThursdayOpen"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.ThursdayOpen"  id="ThursdayOpen"></b-form-input>
   </b-col>
     <b-col md="4" class="text-center">
       to
       </b-col>
          <!--closing-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedTh" v-model="foodTruckInfo.ThursdayClose"  id="ThursdayClose" ></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.ThursdayClose"  id="ThursdayClose" ></b-form-input>
   </b-col>
     </b-row>
     </div>
@@ -78,14 +78,14 @@
     <b-row>
          <!--opening-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedF" v-model="foodTruckInfo.FridayOpen"  id="FridayOpen"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.FridayOpen"  id="FridayOpen"></b-form-input>
   </b-col>
     <b-col md="4" class="text-center">
       to
       </b-col>
          <!--closing-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedF" v-model="foodTruckInfo.FridayClose"  id="FridayClose" ></b-form-input>
+   <b-form-input type="time"  v-model="foodTruckInfo.FridayClose"  id="FridayClose" ></b-form-input>
   </b-col>
     </b-row>
     </div>
@@ -95,14 +95,14 @@
     <b-row>
          <!--opening-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedSa" v-model="foodTruckInfo.SaturdayOpen"  id="SaturdayOpen"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.SaturdayOpen"  id="SaturdayOpen"></b-form-input>
   </b-col>
     <b-col md="4" class="text-center">
       to
       </b-col>
          <!--closing-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedSa" v-model="foodTruckInfo.SaturdayClose"  id="SaturdayClose" ></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.SaturdayClose"  id="SaturdayClose" ></b-form-input>
   </b-col>
     </b-row>
     </div>
@@ -112,19 +112,20 @@
     <b-row>
          <!--opening-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedSu" v-model="foodTruckInfo.SundayOpen"  id="SundayOpen"></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.SundayOpen"  id="SundayOpen"></b-form-input>
   </b-col>
     <b-col md="4" class="text-center">
       to
       </b-col>
          <!--closing-->
       <b-col md="2">
-   <b-form-input type="time" :disabled="checkedSu" v-model="foodTruckInfo.SundayClose"  id="SundayClose" ></b-form-input>
+   <b-form-input type="time" v-model="foodTruckInfo.SundayClose"  id="SundayClose" ></b-form-input>
   </b-col>
     </b-row>
     </div>
     <div class="my-4 d-flex justify-content-center"> 
-  <b-button  @click="save" type="submit" variant="primary">Submit</b-button >
+  <b-button v-if="!submitting" @click="save" type="submit" variant="primary">Submit</b-button >
+      <b-spinner v-if="submitting" label="Spinning"></b-spinner>
   <router-link to="/admin"><b-button variant="primary" class="ml-2">Cancel</b-button ></router-link>
   </div>
   </b-form>
@@ -137,6 +138,7 @@ export default {
     name:'workingHours',
     data: function() {
       return{
+      submitting:false,
         foodTruckInfo:{
         MondayOpen:'',
         MondayClose:'',
@@ -156,15 +158,17 @@ export default {
       }
     },
       methods:{
+            submitForm(){
+        this.submitting=true;
+        setTimeout(()=> this.submitting=false, 2000)
+       },
         async save(){
             //update data
             try {
+               this.submitForm();
                 await DirectoryService.putFoodTruckById(this.$store.state.route.params.foodTruckId, this.foodTruckInfo)
                 this.$router.push({
-                    name:'truckerInfo',
-                    params:{
-                        foodTruckId:this.$store.state.route.params.foodTruckId
-                    }
+                    name:'profile',
                 })
             } catch (error) {
                 //eslint-disable-next-line

@@ -262,6 +262,7 @@ export default {
           this.submitForm();
           },1000)
           await DirectoryService.postFoodTruck(this.foodTruckInfo)
+          console.log('truck added')
           this.$router.push({
             name:'profile'
           }) 

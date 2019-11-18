@@ -120,10 +120,7 @@ export default {
               this.submitForm();
                 await DirectoryService.putFoodTruckById(this.$store.state.route.params.foodTruckId, this.foodTruckInfo)
                 this.$router.push({
-                    name:'truckerInfo',
-                    params:{
-                        foodTruckId:this.$store.state.route.params.foodTruckId
-                    }
+                    name:'profile'
                 })
             } catch (error) {
                 //eslint-disable-next-line
