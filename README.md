@@ -18,7 +18,10 @@ Foodtruck information is displayed here. This includes opening hours, name, abou
 User can log in and register. Once registered or logged in they will be redirected to the 'Admin Page'.
 
 ### Admin Page
-User can add, edit and delete foodtrucks here. All Foodtrucks added are displayed here.
+User can add, edit and delete foodtrucks here. All Foodtrucks added are displayed here. Only logged in users can access this page. 
+Enter the following credentials in the login page to test the functions:
+`email: test@test.com`
+`password: password123`
 
 ## Installation
 ```javascript
